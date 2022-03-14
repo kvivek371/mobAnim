@@ -1,0 +1,171 @@
+body{
+    background-image: url(./sky\ \(2\).jpg);
+    margin: 0;    
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-left: 10px solid #f4c430;
+    border-right: 10px solid green;
+    height: 100vh;
+}
+
+.heading{
+    position: absolute;
+    top: 100px;
+    left: 350px;
+}
+
+.imgSun{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    animation: sunAnim 480s linear infinite;
+}
+
+@keyframes sunAnim{
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translate(-2000px) ;
+    }
+
+    100%{
+        transform: translate(-4000px) ;
+    }
+}
+
+.city{
+    background-repeat: repeat-x;
+    width: 500%;
+    background-image: url(./city\ \(2\).png);
+    height: 18rem;
+    position: relative;
+    top: 260px;
+    left: 10px;
+    animation: cityAnim 10s linear infinite;
+    z-index: -1;
+}
+
+
+@keyframes cityAnim{
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translate(-2000px) ;
+    }
+
+    100%{
+        transform: translate(-4000px) ;
+    }
+}
+
+.road{
+    background-repeat: repeat-x;
+    width: 500%;
+    background-image: url(./road\ \(2\).jpg);
+    height: 15rem;
+    position: relative;
+    top: 220px;
+    animation: roadAnim 10s linear infinite;
+    z-index: -1;
+}
+
+
+@keyframes roadAnim{
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translate(-2000px) ;
+    }
+
+    100%{
+        transform: translate(-4000px) ;
+    }
+}
+
+.car{
+    position: relative;
+    left: 500px;
+}
+/* 
+@keyframes carAnim{
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translate(2000px) ;
+    }
+
+    100%{
+        transform: translate(4000px) ;
+    }
+} */
+
+.carImg{
+    width: 400px;
+    position: absolute;
+    top: 500px;
+}
+
+.flag{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 525px;
+    left: 315px;
+}
+
+.wheelRear{
+    width: 65px;
+    position: absolute;
+    top: 590px;
+    left: 40px;
+    animation: wheelRearAnim 1ms linear infinite;
+}
+
+@keyframes wheelRearAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.wheelFront{
+    width: 65px;
+    position: absolute;
+    top: 590px;
+    left: 284px;
+    animation: wheelFrontAnim 1ms linear infinite;
+}
+
+@keyframes wheelFrontAnim{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(-90deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+

@@ -1,0 +1,316 @@
+body{
+    background-color: yellow;
+}
+
+.container{
+    position: absolute;
+    left: 500px;
+}
+
+.list1{
+    display: inline-block;
+    align-items: center;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(131, 43, 172);
+    animation: anim1 4s linear infinite alternate;
+}
+
+
+@keyframes anim1 {
+    0%{
+        transform: skewX(30deg);
+    }
+
+    50%{
+        transform: skewX(-30deg);
+    }
+
+    100%{
+        transform: skewX(30deg);
+    }
+}
+
+
+.list2{
+    display: inline-block;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    animation: anim2 4s linear infinite alternate;
+}
+
+@keyframes anim2{
+
+    0%{
+        transform: skewY(30deg);
+    }
+
+    100%{
+        transform: skewY(-30deg);
+    }
+}
+
+.list3{
+    display: inline-block;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    animation-name: anim3;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim3{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.list4{
+    display: inline-block;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: anim4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim4{
+    0%{
+        transform: scaleY(1);
+    }
+    
+    50%{
+        transform: scaleY(0.5); 
+    }
+
+    100%{
+        transform: scaleY(1); 
+    }
+}
+
+.list5{
+    display: inline-block;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: anim5;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim5{
+    0%{
+        transform: scaleX(1);
+    }
+    
+    50%{
+        transform: scaleX(0.5); 
+    }
+
+    100%{
+        transform: scaleX(1); 
+    }
+}
+
+.list6{
+    display: inline-block;
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: anim6;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes anim6{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Media queries */
+
+@media all and (max-width :1000px){
+
+    body{
+        background-color: greenyellow;
+    }
+    
+    .container{
+        position: absolute;
+        left: 100px;
+    }
+    
+    .list1{
+        display: inline-block;
+        align-items: center;
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(131, 43, 172);
+        animation: anim1 4s linear infinite alternate;
+    }
+    
+    
+    @keyframes anim1 {
+        0%{
+            transform: skewX(30deg);
+        }
+    
+        50%{
+            transform: skewX(-30deg);
+        }
+    
+        100%{
+            transform: skewX(30deg);
+        }
+    }
+    
+    
+    .list2{
+        display: inline-block;
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        animation: anim2 4s linear infinite alternate;
+    }
+    
+    @keyframes anim2{
+    
+        0%{
+            transform: skewY(30deg);
+        }
+    
+        100%{
+            transform: skewY(-30deg);
+        }
+    }
+    
+    .list3{
+        display: inline-block;
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: dodgerblue;
+        animation-name: anim3;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes anim3{
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    
+    .list4{
+        display: inline-block;
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        animation-name: anim4;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes anim4{
+        0%{
+            transform: scaleY(1);
+        }
+        
+        50%{
+            transform: scaleY(0.5); 
+        }
+    
+        100%{
+            transform: scaleY(1); 
+        }
+    }
+    
+    .list5{
+        display: inline-block;
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        animation-name: anim5;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes anim5{
+        0%{
+            transform: scaleX(1);
+        }
+        
+        50%{
+            transform: scaleX(0.5); 
+        }
+    
+        100%{
+            transform: scaleX(1); 
+        }
+    }
+    
+    .list6{
+        display: inline-block;
+        margin: 50px;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        animation-name: anim6;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+    }
+    
+    @keyframes anim6{
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+
+
+}

@@ -1,0 +1,105 @@
+body{
+    background-color:yellow;
+}
+
+.container{
+    position: absolute;
+    left: 700px;
+}
+
+.item1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+    transition: width 4s;
+}
+
+
+.item1:hover{
+    width: 300px;
+}
+
+.item2{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+    transition: width 4s,height 4s;
+}
+
+.item2:hover{
+    width: 300px;
+    height: 300px;
+}
+
+.item3{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+    transition: width 4s;
+}
+
+.item3:hover{
+    width: 300px;
+}
+
+.item4{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+    transition: width 4s;
+}
+
+.item4:hover{
+    width: 300px;
+}
+
+.item5{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+    transition: width 4s;
+}
+
+.item5:hover{
+    width: 300px;
+}
+
+.item6{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+    transition: width 4s;
+}
+
+.item6:hover{
+    width: 300px;
+}
+
+.item7{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+    transition: width 4s;
+}
+
+
+.item7:hover{
+    width: 300px;
+}
+
+
+@media all and (max-width :1000px){
+    
+    .container{
+        position: absolute;
+        left: 700px;
+    }
+
+}
